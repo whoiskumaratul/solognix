@@ -1,0 +1,21 @@
+
+.container {
+    display: block;
+    overflow: hidden;
+  }
+  
+  .slider-track {
+    display: flex;
+    
+     width: calc(200px * 23);
+    animation: scroll 40s linear infinite;
+  }
+  
+  @keyframes scroll {
+    0% {
+      transform: translate(0);
+    }
+    100%{
+      transform: translate(calc(-200px * 23));
+    }
+  }
